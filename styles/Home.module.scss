@@ -54,9 +54,48 @@
 .benefits {
   position: relative;
   z-index: 100;
+  padding: 3.5em 0;
   height: 100vh;
 
   background-color: $light-grayish-blue;
+
+  h2,
+  h3 {
+    color: $dark-blue;
+    font-weight: 300;
+  }
+
+  h2 {
+    margin-top: 1.1em;
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    color: $grayish-blue;
+  }
+
+  .benefitsList {
+    display: flex;
+    margin-top: 4em;
+  }
+
+  .benefitItem {
+    margin-right: 1.6em;
+
+    h3 {
+      font-size: 1.4em;
+    }
+
+    p {
+      font-size: 0.8em;
+    }
+  }
+
+  .benefitIcon {
+    margin-bottom: 0.7em;
+  }
 }
 
 .latestArticles {

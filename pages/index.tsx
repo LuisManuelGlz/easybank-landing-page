@@ -23,8 +23,10 @@ export default function Home() {
                 <h2>Next generation digital banking</h2>
                 <p>
                   Take your financial life online. Your Easybank account
-                  <br /> will be one-stop-shop for spending, saving,
-                  <br /> budgeting, investing, and much more.
+                  <br />
+                  will be one-stop-shop for spending, saving,
+                  <br />
+                  budgeting, investing, and much more.
                 </p>
                 <Button>Request Invite</Button>
               </div>
@@ -47,8 +49,89 @@ export default function Home() {
         </section>
         <section className={styles.benefits}>
           <Container>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem,
-            veritatis.
+            <div>
+              <h2>Why choose Easybank?</h2>
+              <p>
+                We leverage Open Banking to turn your bank account into your
+                financial hub.
+                <br />
+                Control your finances like never before.
+              </p>
+            </div>
+            <div className={styles.benefitsList}>
+              <div className={styles.benefitItem}>
+                <img
+                  className={styles.benefitIcon}
+                  src="/images/icon-online.svg"
+                  alt="Online Banking icon"
+                  width="70"
+                />
+                <h3>Online Banking</h3>
+                <p>
+                  Our modern web and mobile
+                  <br />
+                  applications allow you to keep
+                  <br />
+                  track of your finances wherever you
+                  <br />
+                  are in the world.
+                </p>
+              </div>
+              <div className={styles.benefitItem}>
+                <img
+                  className={styles.benefitIcon}
+                  src="/images/icon-budgeting.svg"
+                  alt="Online Banking icon"
+                  width="70"
+                />
+                <h3>Simple Budgeting</h3>
+                <p>
+                  See exactly where your money
+                  <br />
+                  goes each month. Receive
+                  <br />
+                  notifications when you're close to
+                  <br />
+                  hitting your limits.
+                </p>
+              </div>
+              <div className={styles.benefitItem}>
+                <img
+                  className={styles.benefitIcon}
+                  src="/images/icon-onboarding.svg"
+                  alt="Online Banking icon"
+                  width="70"
+                />
+                <h3>Fast Onboarding</h3>
+                <p>
+                  We don't do branches. Open your
+                  <br />
+                  account in minutes online and start
+                  <br />
+                  taking control of your finances
+                  <br />
+                  right away.
+                </p>
+              </div>
+              <div className={styles.benefitItem}>
+                <img
+                  className={styles.benefitIcon}
+                  src="/images/icon-api.svg"
+                  alt="Online Banking icon"
+                  width="70"
+                />
+                <h3>Open API</h3>
+                <p>
+                  Manage your savings, investments,
+                  <br />
+                  pension, and much more from one
+                  <br />
+                  account. Tracking your money has
+                  <br />
+                  never been easier.
+                </p>
+              </div>
+            </div>
           </Container>
         </section>
         <section className={styles.latestArticles}>
