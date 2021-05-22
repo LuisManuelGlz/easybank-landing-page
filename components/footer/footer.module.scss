@@ -1,0 +1,92 @@
+@import '/styles/variables';
+
+.footer {
+  background-color: $dark-blue;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerSocialLinks {
+  a {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-size: cover;
+  }
+
+  .facebookLogo {
+    background-image: url('/images/icon-facebook.svg');
+
+    &:hover,
+    &:focus {
+      background-image: url('/images/icon-facebook-lima.svg');
+    }
+  }
+
+  .youtubeLogo {
+    background-image: url('/images/icon-youtube.svg');
+
+    &:hover,
+    &:focus {
+      background-image: url('/images/icon-youtube-lima.svg');
+    }
+  }
+
+  .twitterLogo {
+    background-image: url('/images/icon-twitter.svg');
+
+    &:hover,
+    &:focus {
+      background-image: url('/images/icon-twitter-lima.svg');
+    }
+  }
+
+  .pinterestLogo {
+    background-image: url('/images/icon-pinterest.svg');
+
+    &:hover,
+    &:focus {
+      background-image: url('/images/icon-pinterest-lima.svg');
+    }
+  }
+
+  .instagramLogo {
+    background-image: url('/images/icon-instagram.svg');
+
+    &:hover,
+    &:focus {
+      background-image: url('/images/icon-instagram-lima.svg');
+    }
+  }
+}
+
+.footerLinks {
+  display: flex;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    color: $white;
+
+    &:hover,
+    &:focus {
+      color: $lime-green;
+    }
+  }
+}
+
+.footerRights {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.rights {
+  color: $grayish-blue;
+}

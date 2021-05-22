@@ -1,7 +1,7 @@
 @import './variables';
 
 .showcase {
-  height: 90vh;
+  height: 100vh;
   padding: 10em 0;
 
   background-color: $very-light-gray;
@@ -55,7 +55,7 @@
   position: relative;
   z-index: 100;
   padding: 3.5em 0;
-  height: 90vh;
+  height: 100vh;
 
   background-color: $light-grayish-blue;
 
@@ -83,14 +83,14 @@
 
   .benefitItem {
     margin-right: 1.6em;
+  }
 
-    h3 {
-      font-size: 1.4em;
-    }
+  .benefitTitle {
+    font-size: 1.4em;
+  }
 
-    p {
-      font-size: 0.8em;
-    }
+  .benefitDescription {
+    font-size: 0.8em;
   }
 
   .benefitIcon {
@@ -99,7 +99,7 @@
 }
 
 .latestArticles {
-  height: 90vh;
+  height: 100vh;
 
   background-color: $very-light-gray;
 

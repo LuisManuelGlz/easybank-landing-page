@@ -16,6 +16,7 @@ export default function Home() {
 
         <Header />
 
+        {/* Showcase */}
         <section className={styles.showcase}>
           <Container>
             <div className={styles.showcaseContainer}>
@@ -48,6 +49,7 @@ export default function Home() {
           </Container>
         </section>
 
+        {/* Benefits section */}
         <section className={styles.benefits}>
           <Container>
             <div>
@@ -59,6 +61,7 @@ export default function Home() {
                 Control your finances like never before.
               </p>
             </div>
+
             <div className={styles.benefitsList}>
               <div className={styles.benefitItem}>
                 <img
@@ -67,8 +70,8 @@ export default function Home() {
                   alt="Online Banking icon"
                   width="70"
                 />
-                <h3>Online Banking</h3>
-                <p>
+                <h3 className={styles.benefitTitle}>Online Banking</h3>
+                <p className={styles.benefitDescription}>
                   Our modern web and mobile
                   <br />
                   applications allow you to keep
@@ -78,6 +81,7 @@ export default function Home() {
                   are in the world.
                 </p>
               </div>
+
               <div className={styles.benefitItem}>
                 <img
                   className={styles.benefitIcon}
@@ -85,8 +89,8 @@ export default function Home() {
                   alt="Online Banking icon"
                   width="70"
                 />
-                <h3>Simple Budgeting</h3>
-                <p>
+                <h3 className={styles.benefitTitle}>Simple Budgeting</h3>
+                <p className={styles.benefitDescription}>
                   See exactly where your money
                   <br />
                   goes each month. Receive
@@ -96,6 +100,7 @@ export default function Home() {
                   hitting your limits.
                 </p>
               </div>
+
               <div className={styles.benefitItem}>
                 <img
                   className={styles.benefitIcon}
@@ -103,8 +108,8 @@ export default function Home() {
                   alt="Online Banking icon"
                   width="70"
                 />
-                <h3>Fast Onboarding</h3>
-                <p>
+                <h3 className={styles.benefitTitle}>Fast Onboarding</h3>
+                <p className={styles.benefitDescription}>
                   We don't do branches. Open your
                   <br />
                   account in minutes online and start
@@ -114,6 +119,7 @@ export default function Home() {
                   right away.
                 </p>
               </div>
+
               <div className={styles.benefitItem}>
                 <img
                   className={styles.benefitIcon}
@@ -121,8 +127,8 @@ export default function Home() {
                   alt="Online Banking icon"
                   width="70"
                 />
-                <h3>Open API</h3>
-                <p>
+                <h3 className={styles.benefitTitle}>Open API</h3>
+                <p className={styles.benefitDescription}>
                   Manage your savings, investments,
                   <br />
                   pension, and much more from one
@@ -136,9 +142,11 @@ export default function Home() {
           </Container>
         </section>
 
+        {/* Articles section */}
         <section className={styles.latestArticles}>
           <Container>
             <h2>Latest Articles</h2>
+
             <div className={styles.articlesList}>
               <div className={styles.articleItem}>
                 <img
@@ -160,6 +168,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+
               <div className={styles.articleItem}>
                 <img
                   className={styles.articleImage}
@@ -178,6 +187,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+
               <div className={styles.articleItem}>
                 <img
                   className={styles.articleImage}
@@ -196,6 +206,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+
               <div className={styles.articleItem}>
                 <img
                   className={styles.articleImage}
