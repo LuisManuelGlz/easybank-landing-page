@@ -1,4 +1,4 @@
-@import '/styles/variables';
+@import "/styles/variables";
 
 .navigation {
   position: fixed;
@@ -6,41 +6,43 @@
   z-index: 1000;
 
   background-color: $white;
+}
 
-  .navContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .navLinks {
-      display: flex;
-      margin: 0;
-      margin-left: 1.5em;
-      padding: 0;
-
-      list-style-type: none;
-
-      a {
-        display: block;
-        padding: 2.3em 1em;
-
-        color: $grayish-blue;
-        background: transparent bottom $white no-repeat;
-        background-size: 65% 0.4em;
-
-        &:hover,
-        &:focus {
-          background: $primary-gradient bottom $white no-repeat;
-          background-size: 65% 0.4em;
-          color: $dark-blue;
-        }
-      }
-    }
-  }
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navBrand {
   img {
-    width: 9.8em;
+    width: 8em;
+  }
+}
+
+.navLinks {
+  display: flex;
+  margin: 0;
+  margin-left: 1.5em;
+  padding: 0;
+
+  list-style-type: none;
+
+  a {
+    display: block;
+    padding: 2.2em 1em;
+
+    font-size: 0.8em;
+
+    color: $grayish-blue;
+    background: transparent bottom $white no-repeat;
+    background-size: 65% 0.3em;
+
+    &:hover,
+    &:focus {
+      background: $primary-gradient bottom $white no-repeat;
+      background-size: 65% 0.3em;
+      color: $dark-blue;
+    }
   }
 }
