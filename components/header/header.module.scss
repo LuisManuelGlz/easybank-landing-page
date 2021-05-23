@@ -36,7 +36,8 @@
 
     color: $grayish-blue;
     background: transparent bottom $white no-repeat;
-    background-size: 65% 0.3em;
+    background-size: 0 0.3em;
+    transition: background-size 0.1s ease-in-out;
 
     &:hover,
     &:focus {
