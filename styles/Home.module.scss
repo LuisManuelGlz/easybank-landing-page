@@ -19,6 +19,7 @@
     margin-top: -1.2em;
     margin-bottom: 2.1em;
 
+    word-spacing: -0.1em;
     font-size: 1em;
     line-height: 1.5em;
 
@@ -44,9 +45,7 @@
 
 .benefits {
   position: relative;
-  z-index: 100;
   padding: 3.5em 0;
-  height: 100vh;
 
   background-color: $light-grayish-blue;
 
@@ -58,40 +57,44 @@
 
   h2 {
     margin-top: 1.1em;
-    font-size: 2em;
+    font-size: 2.15em;
   }
 
   p {
-    font-size: 0.9em;
     line-height: 1.5em;
+    word-spacing: -0.1em;
     color: $grayish-blue;
   }
 
   .benefitsList {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 4em;
   }
 
-  .benefitItem {
-    margin-right: 1.6em;
+  .benefitItem:hover {
+    .benefitIcon {
+      transform: scale(1.1);
+    }
   }
 
   .benefitTitle {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 
   .benefitDescription {
-    font-size: 0.8em;
+    line-height: 1.6em;
+    font-size: 0.9em;
   }
 
   .benefitIcon {
     margin-bottom: 0.7em;
+    transition: all 0.4s ease-out;
   }
 }
 
 .latestArticles {
-  height: 100vh;
-
   background-color: $very-light-gray;
 
   h2 {

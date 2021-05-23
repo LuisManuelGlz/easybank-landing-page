@@ -67,7 +67,6 @@ export default function Home() {
                   className={styles.benefitIcon}
                   src="/images/icon-online.svg"
                   alt="Online Banking icon"
-                  width="70"
                 />
                 <h3 className={styles.benefitTitle}>Online Banking</h3>
                 <p className={styles.benefitDescription}>
@@ -86,7 +85,6 @@ export default function Home() {
                   className={styles.benefitIcon}
                   src="/images/icon-budgeting.svg"
                   alt="Online Banking icon"
-                  width="70"
                 />
                 <h3 className={styles.benefitTitle}>Simple Budgeting</h3>
                 <p className={styles.benefitDescription}>
@@ -105,7 +103,6 @@ export default function Home() {
                   className={styles.benefitIcon}
                   src="/images/icon-onboarding.svg"
                   alt="Online Banking icon"
-                  width="70"
                 />
                 <h3 className={styles.benefitTitle}>Fast Onboarding</h3>
                 <p className={styles.benefitDescription}>
@@ -124,7 +121,6 @@ export default function Home() {
                   className={styles.benefitIcon}
                   src="/images/icon-api.svg"
                   alt="Online Banking icon"
-                  width="70"
                 />
                 <h3 className={styles.benefitTitle}>Open API</h3>
                 <p className={styles.benefitDescription}>
