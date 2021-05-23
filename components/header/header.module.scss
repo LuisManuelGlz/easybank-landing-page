@@ -22,21 +22,25 @@
 
       a {
         display: block;
-        padding: 2.5em 1.2em;
-
-        font-size: 0.7em;
+        padding: 2.3em 1em;
 
         color: $grayish-blue;
         background: transparent bottom $white no-repeat;
-        background-size: 65% 0.3em;
+        background-size: 65% 0.4em;
 
         &:hover,
         &:focus {
           background: $primary-gradient bottom $white no-repeat;
-          background-size: 65% 0.3em;
+          background-size: 65% 0.4em;
           color: $dark-blue;
         }
       }
     }
+  }
+}
+
+.navBrand {
+  img {
+    width: 9.8em;
   }
 }

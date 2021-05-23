@@ -7,7 +7,7 @@ const Header = () => {
     <nav className={styles.navigation}>
       <Container>
         <div className={styles.navContainer}>
-          <a href="#">
+          <a className={styles.navBrand} href="#">
             <img width="130" src="/images/logo.svg" alt="Easybank logo" />
           </a>
           <ul className={styles.navLinks}>
