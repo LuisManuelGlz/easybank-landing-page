@@ -1,8 +1,8 @@
-@import '/styles/variables';
+@import "/styles/variables";
 
 .footer {
-  padding-top: 3.5em;
-  padding-bottom: 3.5em;
+  padding-top: 2.5em;
+  padding-bottom: 3em;
   background-color: $dark-blue;
 }
 
@@ -12,68 +12,72 @@
 }
 
 .footerSocialLinks {
+  margin-top: 3em;
+
   a {
     display: inline-block;
-    width: 1em;
-    height: 1em;
-    background-size: cover;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.7em;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .facebookLogo {
-    background-image: url('/images/icon-facebook.svg');
+    background-image: url("/images/icon-facebook.svg");
 
     &:hover,
     &:focus {
-      background-image: url('/images/icon-facebook-lima.svg');
+      background-image: url("/images/icon-facebook-lima.svg");
     }
   }
 
   .youtubeLogo {
-    background-image: url('/images/icon-youtube.svg');
+    background-image: url("/images/icon-youtube.svg");
 
     &:hover,
     &:focus {
-      background-image: url('/images/icon-youtube-lima.svg');
+      background-image: url("/images/icon-youtube-lima.svg");
     }
   }
 
   .twitterLogo {
-    background-image: url('/images/icon-twitter.svg');
+    background-image: url("/images/icon-twitter.svg");
 
     &:hover,
     &:focus {
-      background-image: url('/images/icon-twitter-lima.svg');
+      background-image: url("/images/icon-twitter-lima.svg");
     }
   }
 
   .pinterestLogo {
-    background-image: url('/images/icon-pinterest.svg');
+    background-image: url("/images/icon-pinterest.svg");
 
     &:hover,
     &:focus {
-      background-image: url('/images/icon-pinterest-lima.svg');
+      background-image: url("/images/icon-pinterest-lima.svg");
     }
   }
 
   .instagramLogo {
-    background-image: url('/images/icon-instagram.svg');
+    background-image: url("/images/icon-instagram.svg");
 
     &:hover,
     &:focus {
-      background-image: url('/images/icon-instagram-lima.svg');
+      background-image: url("/images/icon-instagram-lima.svg");
     }
   }
 }
 
 .footerLinks {
-  display: flex;
-
-  div {
-    display: flex;
-    flex-direction: column;
-  }
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-flow: column;
+  column-gap: 7em;
+  margin-left: -11.5em;
 
   a {
+    font-size: 0.8em;
     color: $white;
 
     &:hover,
@@ -90,5 +94,14 @@
 }
 
 .rights {
+  margin-top: 2em;
+  font-size: 0.8em;
   color: $grayish-blue;
+}
+
+@media only screen and (max-width: 1349px) {
+  .footerLinks {
+    column-gap: 5em;
+    margin-left: 0;
+  }
 }

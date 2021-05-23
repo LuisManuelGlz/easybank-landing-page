@@ -1,6 +1,6 @@
-import Container from '../container';
-import Button from '../button';
-import styles from './footer.module.scss';
+import Container from "../container";
+import Button from "../button";
+import styles from "./footer.module.scss";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
       <Container>
         <div className={styles.footerContainer}>
           <div>
-            <a>
+            <a href="#">
               <img src="/images/logo-dark.svg" alt="Easybank logo" />
             </a>
             <div className={styles.footerSocialLinks}>
@@ -19,18 +19,16 @@ const Footer = () => {
               <a className={styles.instagramLogo} href="#" />
             </div>
           </div>
+
           <div className={styles.footerLinks}>
-            <div>
-              <a href="#">About Us</a>
-              <a href="#">Contact</a>
-              <a href="#">Blog</a>
-            </div>
-            <div>
-              <a href="#">Careers</a>
-              <a href="#">Support</a>
-              <a href="#">Privacy Policy</a>
-            </div>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">Support</a>
+            <a href="#">Privacy Policy</a>
           </div>
+
           <div className={styles.footerRights}>
             <Button>Request Invite</Button>
             <div className={styles.rights}>
