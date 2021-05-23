@@ -140,7 +140,9 @@ export default function Home() {
         {/* Articles section */}
         <section className={styles.latestArticles}>
           <Container>
-            <h2>Latest Articles</h2>
+            <div>
+              <h2>Latest Articles</h2>
+            </div>
 
             <div className={styles.articlesList}>
               <div className={styles.articleItem}>
