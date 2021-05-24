@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <Container>
         <div className={styles.footerContainer}>
-          <div>
+          <div className={styles.footerSocial}>
             <a href="#">
               <img src="/images/logo-dark.svg" alt="Easybank logo" />
             </a>
