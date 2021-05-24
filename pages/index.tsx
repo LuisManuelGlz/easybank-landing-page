@@ -1,9 +1,9 @@
-import Head from 'next/head';
-import Layout from '../components/layout';
-import Header from '../components/header';
-import Container from '../components/container';
-import Button from '../components/button';
-import styles from '../styles/Home.module.scss';
+import Head from "next/head";
+import Layout from "../components/layout";
+import Header from "../components/header";
+import Container from "../components/container";
+import Button from "../components/button";
+import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
@@ -22,7 +22,12 @@ export default function Home() {
               <img
                 className={styles.bgIntroDesktop}
                 src="/images/bg-intro-desktop.svg"
-                alt="Intro"
+                alt="Intro desktop"
+              />
+              <img
+                className={styles.bgIntroMobile}
+                src="/images/bg-intro-mobile.svg"
+                alt="Intro mobile"
               />
               <img
                 className={styles.bgIntroMockups}
@@ -39,11 +44,9 @@ export default function Home() {
               </h2>
 
               <p>
-                Take your financial life online. Your Easybank account
-                <br />
-                will be one-stop-shop for spending, saving,
-                <br />
-                budgeting, investing, and much more.
+                Take your financial life online. Your Easybank account will be
+                one-stop-shop for spending, saving, budgeting, investing, and
+                much more.
               </p>
 
               <Button>Request Invite</Button>
@@ -56,11 +59,9 @@ export default function Home() {
           <Container>
             <div>
               <h2>Why choose Easybank?</h2>
-              <p>
+              <p className={styles.benefitsDescription}>
                 We leverage Open Banking to turn your bank account into your
-                financial hub.
-                <br />
-                Control your finances like never before.
+                financial hub. Control your finances like never before.
               </p>
             </div>
 
@@ -73,13 +74,8 @@ export default function Home() {
                 />
                 <h3 className={styles.benefitTitle}>Online Banking</h3>
                 <p className={styles.benefitDescription}>
-                  Our modern web and mobile
-                  <br />
-                  applications allow you to keep
-                  <br />
-                  track of your finances wherever you
-                  <br />
-                  are in the world.
+                  Our modern web and mobile applications allow you to keep track
+                  of your finances wherever you are in the world.
                 </p>
               </div>
 
@@ -91,13 +87,8 @@ export default function Home() {
                 />
                 <h3 className={styles.benefitTitle}>Simple Budgeting</h3>
                 <p className={styles.benefitDescription}>
-                  See exactly where your money
-                  <br />
-                  goes each month. Receive
-                  <br />
-                  notifications when you're close to
-                  <br />
-                  hitting your limits.
+                  See exactly where your money goes each month. Receive
+                  notifications when you're close to hitting your limits.
                 </p>
               </div>
 
@@ -109,13 +100,8 @@ export default function Home() {
                 />
                 <h3 className={styles.benefitTitle}>Fast Onboarding</h3>
                 <p className={styles.benefitDescription}>
-                  We don't do branches. Open your
-                  <br />
-                  account in minutes online and start
-                  <br />
-                  taking control of your finances
-                  <br />
-                  right away.
+                  We don't do branches. Open your account in minutes online and
+                  start taking control of your finances right away.
                 </p>
               </div>
 
@@ -127,13 +113,8 @@ export default function Home() {
                 />
                 <h3 className={styles.benefitTitle}>Open API</h3>
                 <p className={styles.benefitDescription}>
-                  Manage your savings, investments,
-                  <br />
-                  pension, and much more from one
-                  <br />
-                  account. Tracking your money has
-                  <br />
-                  never been easier.
+                  Manage your savings, investments, pension, and much more from
+                  one account. Tracking your money has never been easier.
                 </p>
               </div>
             </div>
