@@ -1,5 +1,6 @@
 @import './variables';
 
+// Showcase section
 .showcase {
   position: relative;
   padding: 10em 0;
@@ -34,7 +35,7 @@
 
 .bgIntroDesktop {
   width: 88%;
-  transform: translate(35%, -44%);
+  transform: translate(36.5%, -41.5%);
 }
 
 .bgIntroMockups {
@@ -43,6 +44,7 @@
   transform: translate(84%, -31%);
 }
 
+// Benefits section
 .benefits {
   position: relative;
   padding: 3.5em 0;
@@ -95,6 +97,7 @@
   }
 }
 
+// Articles section
 .latestArticles {
   background-color: $very-light-gray;
   padding-top: 5em;
