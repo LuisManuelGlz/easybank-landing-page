@@ -1,5 +1,6 @@
 import Container from '../container';
 import Button from '../button';
+import Hamburger from '../hamburger';
 import styles from './header.module.scss';
 
 const Header = () => {
@@ -30,6 +31,10 @@ const Header = () => {
 
           <div className={styles.navRequestInvite}>
             <Button>Request Invite</Button>
+          </div>
+
+          <div className={styles.navHamburger}>
+            <Hamburger onPress={console.log} />
           </div>
         </div>
       </Container>

@@ -48,16 +48,24 @@
   }
 }
 
+.navHamburger {
+  display: none;
+}
+
 @media only screen and (max-width: 992px) {
   .navBrand {
     img {
-      width: 12.5em;
-      padding: 1.9em 0;
+      width: 7.8em;
+      padding: 1.1em 0;
     }
   }
 
   .navLinks,
   .navRequestInvite {
     display: none;
+  }
+
+  .navHamburger {
+    display: block;
   }
 }

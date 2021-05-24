@@ -1,11 +1,11 @@
-import { ReactNode, FunctionComponent } from 'react';
+import { ReactNode } from 'react';
 import styles from './container.module.scss';
 
 type Props = {
   children?: ReactNode;
 };
 
-const Container: FunctionComponent = ({ children }: Props) => {
+const Container = ({ children }: Props) => {
   return <div className={styles.container}>{children}</div>;
 };
 
