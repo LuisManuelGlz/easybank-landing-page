@@ -27,7 +27,10 @@ const Header = () => {
               <a href="#">Careers</a>
             </li>
           </ul>
-          <Button>Request Invite</Button>
+
+          <div className={styles.navRequestInvite}>
+            <Button>Request Invite</Button>
+          </div>
         </div>
       </Container>
     </nav>

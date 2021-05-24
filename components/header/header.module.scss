@@ -1,4 +1,4 @@
-@import "/styles/variables";
+@import '/styles/variables';
 
 .navigation {
   position: fixed;
@@ -45,5 +45,19 @@
       background-size: 65% 0.3em;
       color: $dark-blue;
     }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navBrand {
+    img {
+      width: 12.5em;
+      padding: 1.9em 0;
+    }
+  }
+
+  .navLinks,
+  .navRequestInvite {
+    display: none;
   }
 }

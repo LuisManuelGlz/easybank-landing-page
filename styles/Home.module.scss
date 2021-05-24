@@ -1,4 +1,4 @@
-@import "./variables";
+@import './variables';
 
 .showcase {
   position: relative;
@@ -34,13 +34,13 @@
 
 .bgIntroDesktop {
   width: 88%;
-  transform: translate(23.5%, -67.5%);
+  transform: translate(35%, -44%);
 }
 
 .bgIntroMockups {
-  z-index: 900;
+  z-index: 800;
   width: 53%;
-  transform: translate(62.5%, -60%);
+  transform: translate(84%, -31%);
 }
 
 .benefits {
@@ -163,4 +163,19 @@
     line-height: 1.5em;
     color: $grayish-blue;
   }
+}
+
+@media only screen and (max-width: 1400px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 576px) {
 }

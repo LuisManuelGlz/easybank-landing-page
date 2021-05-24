@@ -1,10 +1,9 @@
-import Head from "next/head";
-import Image from "next/image";
-import Layout from "../components/layout";
-import Header from "../components/header";
-import Container from "../components/container";
-import Button from "../components/button";
-import styles from "../styles/Home.module.scss";
+import Head from 'next/head';
+import Layout from '../components/layout';
+import Header from '../components/header';
+import Container from '../components/container';
+import Button from '../components/button';
+import styles from '../styles/Home.module.scss';
 
 export default function Home() {
   return (
@@ -19,32 +18,36 @@ export default function Home() {
         {/* Showcase */}
         <section className={styles.showcase}>
           <Container>
-            <h2>
-              Next generation
-              <br />
-              digital banking
-            </h2>
+            <div className={styles.bgContainer}>
+              <img
+                className={styles.bgIntroDesktop}
+                src="/images/bg-intro-desktop.svg"
+                alt="Intro"
+              />
+              <img
+                className={styles.bgIntroMockups}
+                src="/images/image-mockups.png"
+                alt="App mockups"
+              />
+            </div>
 
-            <p>
-              Take your financial life online. Your Easybank account
-              <br />
-              will be one-stop-shop for spending, saving,
-              <br />
-              budgeting, investing, and much more.
-            </p>
+            <div className={styles.introContainer}>
+              <h2>
+                Next generation
+                <br />
+                digital banking
+              </h2>
 
-            <Button>Request Invite</Button>
+              <p>
+                Take your financial life online. Your Easybank account
+                <br />
+                will be one-stop-shop for spending, saving,
+                <br />
+                budgeting, investing, and much more.
+              </p>
 
-            <img
-              className={styles.bgIntroDesktop}
-              src="/images/bg-intro-desktop.svg"
-              alt="Intro"
-            />
-            <img
-              className={styles.bgIntroMockups}
-              src="/images/image-mockups.png"
-              alt="App mockups"
-            />
+              <Button>Request Invite</Button>
+            </div>
           </Container>
         </section>
 
