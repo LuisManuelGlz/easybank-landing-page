@@ -52,6 +52,40 @@
   display: none;
 }
 
+.navModal {
+  position: absolute;
+  top: 13%;
+  left: 6%;
+  right: 6%;
+  border-radius: 0.3em;
+
+  background-color: $white;
+}
+
+.navModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 900;
+
+  background-color: $bg-modal;
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+
+  a {
+    padding: 0.7em 0;
+    color: $dark-blue;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .navBrand {
     img {
