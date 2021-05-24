@@ -1,4 +1,4 @@
-@import "./variables";
+@import './variables';
 
 // Showcase section
 .showcase {
@@ -185,13 +185,7 @@
   color: $grayish-blue;
 }
 
-@media only screen and (max-width: 1400px) {
-}
-
-@media only screen and (max-width: 1200px) {
-}
-
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   .showcase {
     padding: 90% 0 24% 0;
     text-align: center;
@@ -238,8 +232,12 @@
     }
   }
 
+  .benefitsList {
+    justify-content: center;
+  }
+
   .benefitItem {
-    width: 100%;
+    width: 50%;
   }
 
   .benefitTitle {
@@ -284,8 +282,8 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-}
-
 @media only screen and (max-width: 576px) {
+  .benefitItem {
+    width: 100%;
+  }
 }
