@@ -1,11 +1,19 @@
-import Head from "next/head";
-import Layout from "../components/layout";
-import Header from "../components/header";
-import Container from "../components/container";
-import Button from "../components/button";
-import styles from "../styles/Home.module.scss";
+import Head from 'next/head';
+import { ToastContainer, toast } from 'react-toastify';
+import Layout from '../components/layout';
+import Header from '../components/header';
+import Container from '../components/container';
+import Button from '../components/button';
+import styles from '../styles/Home.module.scss';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
+  const articleToast = () =>
+    toast(
+      'I would like to show you this article but there is no backend implemented 🙁'
+    );
+
   return (
     <div>
       <Layout>
@@ -129,7 +137,7 @@ export default function Home() {
             </div>
 
             <div className={styles.articlesList}>
-              <div className={styles.articleItem}>
+              <div className={styles.articleItem} onClick={articleToast}>
                 <img
                   className={styles.articleImage}
                   src="/images/image-currency.jpg"
@@ -150,7 +158,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className={styles.articleItem}>
+              <div className={styles.articleItem} onClick={articleToast}>
                 <img
                   className={styles.articleImage}
                   src="/images/image-restaurant.jpg"
@@ -169,7 +177,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className={styles.articleItem}>
+              <div className={styles.articleItem} onClick={articleToast}>
                 <img
                   className={styles.articleImage}
                   src="/images/image-plane.jpg"
@@ -188,7 +196,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className={styles.articleItem}>
+              <div className={styles.articleItem} onClick={articleToast}>
                 <img
                   className={styles.articleImage}
                   src="/images/image-confetti.jpg"
@@ -212,6 +220,19 @@ export default function Home() {
           </Container>
         </section>
       </Layout>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        toastClassName={styles.toast}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        closeButton={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 }

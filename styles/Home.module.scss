@@ -1,5 +1,10 @@
 @import './variables';
 
+.toast {
+  text-align: center;
+  color: $dark-blue;
+}
+
 // Showcase section
 .showcase {
   position: relative;
