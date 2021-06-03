@@ -1,7 +1,10 @@
 @import './variables';
 
-.toast {
+.toastContainer {
   text-align: center;
+}
+
+.toastBody {
   color: $dark-blue;
 }
 
@@ -60,133 +63,10 @@
 }
 
 // Benefits section
-.benefits {
-  position: relative;
-  padding: 3.5em 0;
-
-  background-color: $light-grayish-blue;
-
-  h2,
-  h3 {
-    color: $dark-blue;
-    font-weight: 300;
-  }
-
-  h2 {
-    margin-top: 1.1em;
-    font-size: 2.15em;
-  }
-
-  .benefitsDescription {
-    width: 60%;
-    line-height: 1.5em;
-    word-spacing: -0.1em;
-    color: $grayish-blue;
-  }
-}
-
-.benefitsList {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 4em;
-  gap: 1em;
-}
-
-.benefitItem {
-  width: 23.25%;
-}
-
-.benefitItem:hover {
-  .benefitIcon {
-    transform: scale(1.1);
-  }
-}
-
-.benefitTitle {
-  font-size: 1.3em;
-}
-
-.benefitDescription {
-  line-height: 1.6em;
-  font-size: 0.9em;
-  word-spacing: -0.1em;
-  color: $grayish-blue;
-}
-
-.benefitIcon {
-  margin-bottom: 0.7em;
-  transition: all 0.4s ease-out;
-}
-
-// Articles section
-.latestArticles {
-  background-color: $very-light-gray;
-  padding-top: 5em;
-  padding-bottom: 4.5em;
-
-  h2 {
-    margin: 0;
-
-    font-weight: 300;
-    font-size: 2.1em;
-
-    color: $dark-blue;
-  }
-}
-
-.articlesList {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1em;
-}
-
-.articleItem {
-  width: 14.2em;
-  margin-top: 2.7em;
-  border-radius: 0.3em;
-  overflow: hidden;
-
-  background-color: $white;
-
-  &:hover {
-    cursor: pointer;
-
-    .articleImage {
-      transform: scale(1.1);
-    }
-  }
-}
-
-.articleImage {
-  border-radius: 0.3em 0.3em 0 0;
-  width: 100%;
-  height: 11.3em;
-
-  object-fit: cover;
-  transition: all 0.4s ease-out;
-}
-
-.articleBody {
-  padding: 0.5em 1.25em;
-}
-
-.articleAuthor {
-  font-size: 0.5em;
-  color: $grayish-blue;
-}
-
-.articleTitle {
-  font-weight: 300;
-  font-size: 0.88em;
-  color: $dark-blue;
-}
-
-.articleContent {
-  margin-top: -0.8em;
-  font-size: 0.7em;
+.benefitsDescription {
+  width: 60%;
   line-height: 1.5em;
+  word-spacing: -0.1em;
   color: $grayish-blue;
 }
 
@@ -222,73 +102,9 @@
     transform: translate(5%, -13.5%);
   }
 
-  .benefits {
-    padding: 1.5em 0;
-    text-align: center;
-
-    h2 {
-      font-size: 1.75em;
-    }
-
-    .benefitsDescription {
-      width: 100%;
-      font-size: 0.85em;
-      line-height: 1.7em;
-    }
-  }
-
-  .benefitsList {
-    justify-content: center;
-  }
-
-  .benefitItem {
-    width: 50%;
-  }
-
-  .benefitTitle {
-    font-size: 1.1em;
-  }
-
-  .benefitDescription {
-    line-height: 1.6em;
-    font-size: 0.8em;
-  }
-
-  .latestArticles {
-    padding-bottom: 6.5em;
-
-    h2 {
-      margin-bottom: -0.8em;
-      text-align: center;
-      font-size: 1.7em;
-    }
-  }
-
-  .articleItem {
-    margin-bottom: -1em;
+  .benefitsDescription {
     width: 100%;
-  }
-
-  .articleBody {
-    padding: 0.8em 1.7em;
-  }
-
-  .articleAuthor {
-    font-size: 0.53em;
-  }
-
-  .articleTitle {
-    margin-top: 0.5em;
-  }
-
-  .articleContent {
-    margin-top: -0.8em;
-    line-height: 1.5em;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .benefitItem {
-    width: 100%;
+    font-size: 0.85em;
+    line-height: 1.7em;
   }
 }

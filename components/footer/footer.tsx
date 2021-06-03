@@ -1,6 +1,6 @@
-import Container from "../container";
-import Button from "../button";
-import styles from "./footer.module.scss";
+import Container from '../container';
+import Button from '../button';
+import styles from './footer.module.scss';
 
 const Footer = () => {
   return (
@@ -35,6 +35,25 @@ const Footer = () => {
               &copy; Easybank. All Rights Reserved
             </div>
           </div>
+        </div>
+        <div className={styles.attribution}>
+          Challenge by{' '}
+          <a
+            href="https://www.frontendmentor.io/solutions/responsive-landing-page-nextjs-and-sass-lIzO07FeR"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Frontend Mentor
+          </a>
+          . Coded by{' '}
+          <a
+            href="https://github.com/LuisManuelGlz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Luis Manuel González
+          </a>
+          .
         </div>
       </Container>
     </footer>

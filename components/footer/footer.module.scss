@@ -1,6 +1,7 @@
-@import "/styles/variables";
+@import '/styles/variables';
 
 .footer {
+  position: relative;
   padding-top: 2.5em;
   padding-bottom: 2.5em;
   background-color: $dark-blue;
@@ -29,47 +30,47 @@
   }
 
   .facebookLogo {
-    background-image: url("/images/icon-facebook.svg");
+    background-image: url('/images/icon-facebook.svg');
 
     &:hover,
     &:focus {
-      background-image: url("/images/icon-facebook-lima.svg");
+      background-image: url('/images/icon-facebook-lima.svg');
     }
   }
 
   .youtubeLogo {
-    background-image: url("/images/icon-youtube.svg");
+    background-image: url('/images/icon-youtube.svg');
 
     &:hover,
     &:focus {
-      background-image: url("/images/icon-youtube-lima.svg");
+      background-image: url('/images/icon-youtube-lima.svg');
     }
   }
 
   .twitterLogo {
-    background-image: url("/images/icon-twitter.svg");
+    background-image: url('/images/icon-twitter.svg');
 
     &:hover,
     &:focus {
-      background-image: url("/images/icon-twitter-lima.svg");
+      background-image: url('/images/icon-twitter-lima.svg');
     }
   }
 
   .pinterestLogo {
-    background-image: url("/images/icon-pinterest.svg");
+    background-image: url('/images/icon-pinterest.svg');
 
     &:hover,
     &:focus {
-      background-image: url("/images/icon-pinterest-lima.svg");
+      background-image: url('/images/icon-pinterest-lima.svg');
     }
   }
 
   .instagramLogo {
-    background-image: url("/images/icon-instagram.svg");
+    background-image: url('/images/icon-instagram.svg');
 
     &:hover,
     &:focus {
-      background-image: url("/images/icon-instagram-lima.svg");
+      background-image: url('/images/icon-instagram-lima.svg');
     }
   }
 }
@@ -102,6 +103,23 @@
   margin-top: 2em;
   font-size: 0.8em;
   color: $grayish-blue;
+}
+
+.attribution {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1em;
+
+  font-size: 11px;
+  text-align: center;
+
+  color: $grayish-blue;
+
+  a {
+    color: $lime-green;
+  }
 }
 
 @media only screen and (max-width: 1350px) {

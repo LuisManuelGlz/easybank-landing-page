@@ -1,0 +1,28 @@
+@import '/styles/variables';
+
+.container {
+  background-color: $very-light-gray;
+  padding-top: 5em;
+  padding-bottom: 4.5em;
+
+  h2 {
+    margin: 0;
+
+    font-weight: 300;
+    font-size: 2.1em;
+
+    color: $dark-blue;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-bottom: 6.5em;
+
+    h2 {
+      margin-bottom: -0.8em;
+      text-align: center;
+      font-size: 1.7em;
+    }
+  }
+}

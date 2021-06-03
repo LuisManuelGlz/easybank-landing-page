@@ -1,19 +1,20 @@
 import Head from 'next/head';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import Layout from '../components/layout';
 import Header from '../components/header';
+import Benefits from '../components/benefits';
+import BenefitsList from '../components/benefits-list';
+import Articles from '../components/articles';
+import ArticlesList from '../components/articles-list';
 import Container from '../components/container';
 import Button from '../components/button';
 import styles from '../styles/Home.module.scss';
+import { BENEFITS } from '../data/benefits';
+import { ARTICLES } from '../data/articles';
 
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
-  const articleToast = () =>
-    toast(
-      'I would like to show you this article but there is no backend implemented 🙁'
-    );
-
   return (
     <div>
       <Layout>
@@ -63,167 +64,33 @@ export default function Home() {
         </section>
 
         {/* Benefits section */}
-        <section className={styles.benefits}>
-          <Container>
-            <div>
-              <h2>Why choose Easybank?</h2>
-              <p className={styles.benefitsDescription}>
-                We leverage Open Banking to turn your bank account into your
-                financial hub. Control your finances like never before.
-              </p>
-            </div>
+        <Benefits>
+          <div>
+            <h2>Why choose Easybank?</h2>
+            <p className={styles.benefitsDescription}>
+              We leverage Open Banking to turn your bank account into your
+              financial hub. Control your finances like never before.
+            </p>
+          </div>
 
-            <div className={styles.benefitsList}>
-              <div className={styles.benefitItem}>
-                <img
-                  className={styles.benefitIcon}
-                  src="/images/icon-online.svg"
-                  alt="Online Banking icon"
-                />
-                <h3 className={styles.benefitTitle}>Online Banking</h3>
-                <p className={styles.benefitDescription}>
-                  Our modern web and mobile applications allow you to keep track
-                  of your finances wherever you are in the world.
-                </p>
-              </div>
-
-              <div className={styles.benefitItem}>
-                <img
-                  className={styles.benefitIcon}
-                  src="/images/icon-budgeting.svg"
-                  alt="Online Banking icon"
-                />
-                <h3 className={styles.benefitTitle}>Simple Budgeting</h3>
-                <p className={styles.benefitDescription}>
-                  See exactly where your money goes each month. Receive
-                  notifications when you're close to hitting your limits.
-                </p>
-              </div>
-
-              <div className={styles.benefitItem}>
-                <img
-                  className={styles.benefitIcon}
-                  src="/images/icon-onboarding.svg"
-                  alt="Online Banking icon"
-                />
-                <h3 className={styles.benefitTitle}>Fast Onboarding</h3>
-                <p className={styles.benefitDescription}>
-                  We don't do branches. Open your account in minutes online and
-                  start taking control of your finances right away.
-                </p>
-              </div>
-
-              <div className={styles.benefitItem}>
-                <img
-                  className={styles.benefitIcon}
-                  src="/images/icon-api.svg"
-                  alt="Online Banking icon"
-                />
-                <h3 className={styles.benefitTitle}>Open API</h3>
-                <p className={styles.benefitDescription}>
-                  Manage your savings, investments, pension, and much more from
-                  one account. Tracking your money has never been easier.
-                </p>
-              </div>
-            </div>
-          </Container>
-        </section>
+          <BenefitsList benefits={BENEFITS} />
+        </Benefits>
 
         {/* Articles section */}
-        <section className={styles.latestArticles}>
-          <Container>
-            <div>
-              <h2>Latest Articles</h2>
-            </div>
+        <Articles>
+          <div>
+            <h2>Latest Articles</h2>
+          </div>
 
-            <div className={styles.articlesList}>
-              <div className={styles.articleItem} onClick={articleToast}>
-                <img
-                  className={styles.articleImage}
-                  src="/images/image-currency.jpg"
-                  alt="Currency"
-                />
-                <div className={styles.articleBody}>
-                  <span className={styles.articleAuthor}>
-                    By Claire Robinson
-                  </span>
-                  <h4 className={styles.articleTitle}>
-                    Receive money in any currency with no fees
-                  </h4>
-                  <p className={styles.articleContent}>
-                    The world is getting smaller and we're becoming more mobile.
-                    So why should you be forced to only receive money in a
-                    single ...
-                  </p>
-                </div>
-              </div>
-
-              <div className={styles.articleItem} onClick={articleToast}>
-                <img
-                  className={styles.articleImage}
-                  src="/images/image-restaurant.jpg"
-                  alt="Restaurant"
-                />
-                <div className={styles.articleBody}>
-                  <span className={styles.articleAuthor}>By Wilson Hutton</span>
-                  <h4 className={styles.articleTitle}>
-                    Treat yourself without worrying about money
-                  </h4>
-                  <p className={styles.articleContent}>
-                    Our simple budgeting feature allows you to separate out your
-                    spending and set realistic limits each month. That means you
-                    ...
-                  </p>
-                </div>
-              </div>
-
-              <div className={styles.articleItem} onClick={articleToast}>
-                <img
-                  className={styles.articleImage}
-                  src="/images/image-plane.jpg"
-                  alt="Plane"
-                />
-                <div className={styles.articleBody}>
-                  <span className={styles.articleAuthor}>By Wilson Hutton</span>
-                  <h4 className={styles.articleTitle}>
-                    Take your Easybank card wherever you go
-                  </h4>
-                  <p className={styles.articleContent}>
-                    We want you to enjoy your travels. This is why we don't
-                    charge any fees on purchases while you're abroad. We'll even
-                    show you ...
-                  </p>
-                </div>
-              </div>
-
-              <div className={styles.articleItem} onClick={articleToast}>
-                <img
-                  className={styles.articleImage}
-                  src="/images/image-confetti.jpg"
-                  alt="Confetti"
-                />
-                <div className={styles.articleBody}>
-                  <span className={styles.articleAuthor}>
-                    By Claire Robinson
-                  </span>
-                  <h4 className={styles.articleTitle}>
-                    Our invite-only Beta accounts are now live!
-                  </h4>
-                  <p className={styles.articleContent}>
-                    After a lot of hard work by the whole team, we're excited to
-                    launch our closed beta. It's easy to request an invite
-                    through the site ...
-                  </p>
-                </div>
-              </div>
-            </div>
-          </Container>
-        </section>
+          <ArticlesList articles={ARTICLES} />
+        </Articles>
       </Layout>
+
       <ToastContainer
         position="bottom-center"
         autoClose={5000}
-        toastClassName={styles.toast}
+        toastClassName={styles.toastContainer}
+        bodyClassName={styles.toastBody}
         hideProgressBar
         newestOnTop={false}
         closeOnClick
@@ -231,7 +98,7 @@ export default function Home() {
         rtl={false}
         pauseOnFocusLoss
         draggable
-        pauseOnHover
+        pauseOnHover={false}
       />
     </div>
   );
